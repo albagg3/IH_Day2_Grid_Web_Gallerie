@@ -1,0 +1,109 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+.item1{
+    grid-area: header;
+    background-image: url("images/header.jpg");
+}
+
+.item2{
+    grid-area: info;
+    background-color: rgb(238, 230, 163);
+}
+
+.item3{
+    grid-area: gallery;
+    background-color: rgb(200, 200, 200);
+}
+
+.grid-container{
+    display: grid;
+    width: 100%;
+    gap: 0px;
+    height:100vh;
+    grid-template-areas: 
+    'header header header header'
+    'info gallery gallery gallery '
+    'info gallery gallery gallery '
+    'info gallery gallery gallery '
+    ;
+}
+header{
+    background:linear-gradient(top, black 70%, white);
+}
+nav{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:10px;
+}
+
+.links-nav{
+   
+}
+.links-nav a{
+    color:white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+}
+.links-nav a:hover{
+    text-decoration: underline;
+}
+
+nav form input{
+    width: 500px;
+    background-color: rgba(255,255,255,0.7);
+    border:none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+
+.button{
+    padding:10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+}
+.iniciar-sesion{
+    background-color:white;
+    color: black;
+   
+
+}
+
+.registrarse{
+    background-color: rgb(31, 31, 245);
+    color: white;
+}
+
+.adobe{
+    background :none;
+    color: white;
+}
+hr{
+    color:white;
+    background-color: white;
+    height:1px;
+    border: none;
+    
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 10px solid rgba(255, 255, 255,0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
